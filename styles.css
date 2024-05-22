@@ -1,0 +1,47 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(14, 6vw);
+    grid-template-rows: repeat(18, 6vw);
+    gap: 1vw;
+    background-color: #000;
+}
+
+.cell {
+    width: 6vw;
+    height: 6vw;
+}
+
+.wall {
+    background-color: #333;
+}
+
+.pac-dot {
+    background-color: #fff;
+}
+
+.pac-man {
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+#score {
+    margin-top: 20px;
+    font-size: 5vw;
+}
